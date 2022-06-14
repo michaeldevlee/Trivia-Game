@@ -25,24 +25,14 @@ const main = async ()=>{
     return '.done'
 }
 
-
-const createListing = async(client, newListing)=>{
-   const result =  await client.db('sample_airbnb').collection('listingsAndReviews').insertOne(newListing);
-   console.log('new listing added')
-}
-
-const listDataBases = async (client) =>{
-    const databasesList = await client.db().admin().listDatabases();
-    console.log("Databases:")
-    databasesList.databases.forEach((db =>{
-        console.log(`-${db.name}`)
-    })) 
-}
-
 main().catch(console.error).finally(instance.close())
 
 app.use(express.static('public'))
 app.listen(3000, ()=>console.log('listening at port 3000'))
+
+app.get('/', (request, response)=>{
+    response.sendFile(__dirname + '/index.html')
+})
 
 app.get('/survival_mode', (request, response)=>{
     response.sendFile(__dirname + '/public/resources/html/survival_mode.html')
