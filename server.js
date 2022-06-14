@@ -5,7 +5,6 @@ const app = express();
 const path = require('path')
 
 const {MongoClient} = require('mongodb')
-//const uri = 'mongodb+srv://mikelee53:cS4mXncYd27p5kvg@cluster0.ocvfnwt.mongodb.net/?retryWrites=true&w=majority'
 const uri = process.env.CONNECTIONSTRING;
 const instance = new MongoClient(uri,{ useNewUrlParser: true })
 const dbName = 'test_db'
