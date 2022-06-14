@@ -1,0 +1,28 @@
+{
+  "name": "trivia-game",
+  "version": "1.0.0",
+  "description": "a mock up of a online trivia game",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikelee53/Trivia-Game.git"
+  },
+  "keywords": [
+    "game"
+  ],
+  "author": "Michael Lee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mikelee53/Trivia-Game/issues"
+  },
+  "homepage": "https://github.com/mikelee53/Trivia-Game#readme",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "mongodb": "^4.7.0"
+  }
+}
