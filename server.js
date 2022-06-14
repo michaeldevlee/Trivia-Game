@@ -2,7 +2,7 @@ const dotenv = require('dotenv').config();
 console.log(process.env)
 const express = require('express');
 const app = express();
-const path = require('path')
+const port = process.env.PORT || 3000
 
 const {MongoClient} = require('mongodb')
 const uri = process.env.CONNECTIONSTRING;
@@ -27,7 +27,7 @@ const main = async ()=>{
 main().catch(console.error).finally(instance.close())
 
 app.use(express.static('public'))
-app.listen(3000, ()=>console.log('listening at port 3000'))
+app.listen(port, ()=>console.log(`listening at port ${port}`))
 
 app.get('/', (request, response)=>{
     response.sendFile(__dirname + '/index.html')
