@@ -30,7 +30,7 @@ app.use(express.static('public'))
 app.listen(port, ()=>console.log(`listening at port ${port}`))
 
 app.get('/', (request, response)=>{
-    response.sendFile(__dirname + '/index.html')
+    response.sendFile(__dirname + '/public/index.html')
 })
 
 app.get('/survival_mode', (request, response)=>{
