@@ -30,13 +30,13 @@ app.use(express.static('public'))
 app.listen(port, ()=>console.log(`listening at port ${port}`))
 
 app.get('/survival_mode', (request, response)=>{
-    response.render(__dirname + '/public/resources/html/survival_mode.html')
+    response.sendFile(__dirname + '/public/resources/html/survival_mode.html')
 })
 
 app.get('/survival_mode/start_game', (request, response)=>{
-    response.render(__dirname + '/public/resources/html/questions_page.html')
+    response.sendFile(__dirname + '/public/resources/html/questions_page.html')
 })
 
 app.get('/results', (request, response)=>{
-    response.render(__dirname + '/public/resources/html/results_page.html')
+    response.sendFile(__dirname + '/public/resources/html/results_page.html')
 })
