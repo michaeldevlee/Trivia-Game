@@ -4,7 +4,6 @@
   "description": "a mock up of a online trivia game",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
   "repository": {
@@ -25,5 +24,8 @@
     "express": "^4.18.1",
     "mongodb": "^4.7.0",
     "node": "^17.7.2"
+  },
+  "engines":{
+    "node": "^17.x"
   }
 }
