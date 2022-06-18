@@ -19,3 +19,7 @@ Javascript, HTML, CSS, NodeJs, MongoDB, Heroku
 ## General Optimizations
 
 I would implement an user/login feature to manage user data rather than storing strings in localStorage. This would provide a more secure solution and allow development to tailor to individualized experiences for the user.
+
+## Lessons Learned
+
+I definitely learned more about server-side logic including routing, responses, requests, request params and how they all relate to each other. In addition, I developed more of an understanding on how to create relationships between the database and server.
