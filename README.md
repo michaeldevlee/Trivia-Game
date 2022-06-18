@@ -1,10 +1,10 @@
-## What kind of game is this?
+## Game Summary
 A browser based quiz-style game based on Open Trivia database
 
-## Which technologies did you use?
+## Technologies Used
 Javascript, HTML, CSS, NodeJs, MongoDB, Heroku
 
-## How does it work?
+## General Game Loop
 1) User is given some parameters to choose such as:
 - Difficulty (Easy -> Hard)
 - Category (pulled from Open Trivia database)
