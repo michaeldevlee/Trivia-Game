@@ -2,8 +2,13 @@ const mainScreenButton = document.querySelector('.go-to-main-screen-button')
 const yourScoreText = document.querySelector('.your-score')
 const highScoreText = document.querySelector('.high-score')
 
-const redirectToMainScreen = ()=>{
+const redirectToMainScreen = (score)=>{
+    updateHighScore(localStorage['High Score'])
     location.href = `${location.origin}`
+}
+
+const updateHighScore = async (score)=>{
+    const response = await fetch(`/update_high_score/${score}`)
 }
 
 const displayScores = () =>{
