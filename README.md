@@ -15,3 +15,7 @@ Javascript, HTML, CSS, NodeJs, MongoDB, Heroku
 4) If the user chooses the correct answer, 10 points will be added to their score in local storage
 5) After winning or losing the current question set, server will update MongoDB if user score is higher than high score
 6) Users will accumulate points
+
+## General Optimizations
+
+I would implement an user/login feature to manage user data rather than storing strings in localStorage. This would provide a more secure solution and allow development to tailor to individualized experiences for the user.
